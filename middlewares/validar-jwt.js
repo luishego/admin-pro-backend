@@ -15,8 +15,6 @@ const validarJwt = ( req, res, next ) => {
         
         next();
 
-        console.log(uid);
-
     } catch( error ){
         return res.status(401).json({
             ok: false,
